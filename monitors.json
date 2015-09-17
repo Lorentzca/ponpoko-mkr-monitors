@@ -1,0 +1,34 @@
+{
+    "monitors": [
+        {
+            "id": "2fKBFQtwh1y",
+            "type": "connectivity",
+            "excludeScopes": [
+                "home: main"
+            ]
+        },
+        {
+            "id": "2nVcCP2WPZs",
+            "name": "filesystem",
+            "type": "host",
+            "metric": "disk%",
+            "operator": ">",
+            "warning": 90,
+            "critical": 95,
+            "duration": 3,
+            "excludeScopes": [
+                "home: main"
+            ]
+        },
+        {
+            "id": "2fL9WJq7e5m",
+            "name": "memory",
+            "type": "host",
+            "metric": "memory%",
+            "operator": ">",
+            "warning": 95,
+            "critical": 98,
+            "duration": 3
+        }
+    ]
+}
